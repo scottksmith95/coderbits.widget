@@ -146,7 +146,7 @@ $(document).ready(function () {
             $('#coderbits').html(content);
         }
 
-        var username = $('#coderbits').attr('data-username');
+        var username = $('#coderbits').attr('data-coderbits-username');
 
         $.getJSON('https://coderbits.com/' + username + '.json?callback=?', handleResponse);
     })();
