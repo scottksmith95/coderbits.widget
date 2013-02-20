@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+#coderbits body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+#coderbits {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font: normal 12px arial, sans-serif;
+    margin: 0 auto;
+    width: 198px;
+    background: #fafafa; /* Old browsers */
+    background: -moz-linear-gradient(top, #fafafa 0%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fafafa 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fafafa 0%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fafafa 0%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fafafa 0%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}
+#coderbits a {
+    text-decoration: none;
+    color: #08C;
+}
+#coderbits a:hover {
+    text-decoration: none;
+    color: #05C;
+}
+#coderbits ol, ul {
+    list-style: none;
+}
+#coderbits-summary {
+    padding: 4px 12px 2px 12px;
+}
+#coderbits-avatar {
+    float: left;
+}
+#coderbits-avatar .avatar {
+    border: 1px solid #ddd;
+    padding: 1px;
+    width: 24px;
+}
+#coderbits-overview {
+    margin-left: 36px;
+}
+#coderbits-overview h1 a {
+    font-size: 13px;
+    text-decoration: none;
+}
+#coderbits-overview p {
+    color: #666;
+    font: italic normal 10px arial, sans-serif;
+}
+#coderbits-skills {
+    border-top: 1px solid #eee;
+    padding: 12px 12px 0 12px;
+}
+#coderbits-skills h2 {
+    font-size: 11px;
+}
+#coderbits-skills p {
+    font-size: 10px;
+}
+#coderbits-stats {
+    padding: 12px 12px 0 12px;
+}
+#coderbits-stats p {
+    font-size: 10px;
+}
+#coderbits-stats-list li {
+    display: inline-block;
+    _display: inline; /* IE fix */
+    margin-right: 5px;
+}
+#coderbits-stats-list li p {
+    line-height: 17px;
+}
+#coderbits-stats-list li strong {
+    font-size: 11px;
+}
+#coderbits-stats-list li span {
+    color: #999;
+    font-size: 11px;
+    -webkit-text-shadow: 1px 1px 0 #fff;
+    text-shadow: 1px 1px 0 #fff;
+}
+#coderbits-stats-list li.last {
+    padding-left: 10px;
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+#coderbits-badges {
+    padding: 15px 0 10px 7px;
+}
+#badges {
+    margin-left: 5px;
+}
+#badges img {
+    width: 22px;
+    height: 22px;
+    margin: 0 3px 0 0;
+}
+#badges a {
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
