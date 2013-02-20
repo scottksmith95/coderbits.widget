@@ -14,7 +14,7 @@ How do I use it?
 
 Place the following in the HEAD section of your page
  
-<link href="https://coderbits.com/content/css/jquery.coderbits.css" media="all" rel="stylesheet" type="text/css">
+&lt;link href="https://coderbits.com/content/css/jquery.coderbits.css" media="all" rel="stylesheet" type="text/css">
 <script src="https://coderbits.com/scripts/jquery.coderbits.js"></script>
  
 Place the following in the page where you want the widget to render and set your username
