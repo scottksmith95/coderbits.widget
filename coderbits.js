@@ -10,11 +10,19 @@
 			x1 = x1.replace(rgx, '$1' + ',' + '$2');
 		}
 		return x1 + x2;
-	}
+	};
 	var request = function(url) {
 		var script = document.getElementsByTagName("script")[0];
 		var handler = document.createElement("script");
 			handler.src = url;
 		script.parentNode.insertBefore(handler, script);
+	};
+	var key = function(integer) {
+		var key = String();
+		var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		for(var i = 0; i < integer; i++) {
+			key += values.charAt(Math.floor(Math.random() * values.length));
+		}
+		return key;
 	};
 })(window, document);
