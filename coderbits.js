@@ -24,6 +24,7 @@
 		console.log(data);
 		delete window[global];
 	}
-	
-	request("https://coderbits.com/Donovan.json?callback=coderbits");
+
+	var username = document.getElementById("coderbits").getAttribute("data-coderbits-username");
+	request("https://coderbits.com/" + username + ".json?callback=coderbits");
 })(window, document);
