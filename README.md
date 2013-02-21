@@ -16,13 +16,13 @@ How do I use it?
 
 * Place the following in the HEAD section of your page
  
-&lt;link href="https://coderbits.com/content/css/jquery.coderbits.css" media="all" rel="stylesheet" type="text/css">
+    &lt;link href="https://coderbits.com/content/css/jquery.coderbits.css" media="all" rel="stylesheet" type="text/css">
 
-&lt;script src="https://coderbits.com/scripts/jquery.coderbits.js"></script>
+    &lt;script src="https://coderbits.com/scripts/jquery.coderbits.js"></script>
  
 * Place the following in the page where you want the widget to render and set your username
 
-&lt;section id="coderbits" data-coderbits-username="&lt;your username>">&lt;/section>
+    &lt;section id="coderbits" data-coderbits-username="&lt;your username>">&lt;/section>
 
 
 Can I host it myself?
