@@ -99,8 +99,8 @@
 
 	var buildBadges = function(data) {
 		var content = '', count = 0, total = 0;
-			content += '<div id="coderbits-badges">';
-			content += '<p id="badges">'
+			content += '<div id="coderbits-awards">';
+			content += '<p id="coderbits-badges">'
 
 		for(var i = 0; i < data.badges.length; i++) {
 			var badge = data.badges[i];

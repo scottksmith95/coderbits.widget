@@ -12,13 +12,11 @@ such as top skills, followers, badges, etc.
 How do I use it?
 ----------------
 
-* Make sure to include jQuery in your page
-
 * Include the following CSS and Javascript in your page
  
-    https://coderbits.com/content/css/jquery.coderbits.css
+    https://coderbits.com/content/widget/coderbits.css
 
-    https://coderbits.com/scripts/jquery.coderbits.js
+    https://coderbits.com/content/widget/coderbits.js
  
 * Place the following in the page where you want the widget to render and set your username
 

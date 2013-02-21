@@ -109,18 +109,18 @@ div#coderbits-stats {
     margin-right: 0;
     padding-right: 0;
 }
-div#coderbits-badges {
+div#coderbits-awards {
     padding: 15px 0 10px 7px;
 }
-#badges {
+#coderbits-badges {
     margin-left: 5px;
 }
-#badges img {
+#coderbits-badges img {
     width: 22px;
     height: 22px;
     margin: 0 3px 0 0;
 }
-#badges a {
+#coderbits-badges a {
     display: inline-block;
     height: 20px;
     vertical-align: middle;
