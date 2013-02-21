@@ -139,5 +139,5 @@
 	};
 
 	var username = document.getElementById(global).getAttribute("data-coderbits-username");
-	request("https://coderbits.com/" + username + ".json?callback=coderbits");
+	request("https://coderbits.com/" + username + ".json?callback=" + global);
 })(window, document);
