@@ -17,4 +17,9 @@
 			handler.src = url;
 		script.parentNode.insertBefore(handler, script);
 	};
+	window["coderbits"] = function(data) {
+		console.log(data);
+		delete window["coderbits"];
+	}
+	request("https://coderbits.com/Donovan.json?callback=coderbits");
 })(window, document);
