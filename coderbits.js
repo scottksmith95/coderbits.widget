@@ -1,5 +1,5 @@
 ;(function(window, undefined) {
-  "use strict";
+	"use strict";
 	var addCommas = function(nStr) {
 		nStr += '';
 		var x = nStr.split('.');
@@ -11,4 +11,10 @@
 		}
 		return x1 + x2;
 	}
+	var request = function(url) {
+		var script = document.getElementsByTagName("script")[0];
+		var handler = document.createElement("script");
+			handler.src = url;
+		script.parentNode.insertBefore(handler, script);
+	};
 })(window);
