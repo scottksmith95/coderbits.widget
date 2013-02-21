@@ -19,7 +19,7 @@
 	};
 	var key = function(integer) {
 		var key = String();
-		var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		var values = "1234567890";
 		for(var i = 0; i < integer; i++) {
 			key += values.charAt(Math.floor(Math.random() * values.length));
 		}
