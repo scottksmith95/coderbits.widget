@@ -32,6 +32,36 @@
 		return content;
 	};
 
+	var buildSkills = function(data) {
+		var content = '', items;
+			content += '<div id="coderbits-skills">';
+			if (data.top_skills.length > 0) {
+				content += '<h2>Top Skills</h2>';
+				items = data.top_skills;
+			} else if (data.top_interests.length > 0) {
+				content += '<h2>Top Interests</h2>';
+				items = data.top_interests;
+			} else if (data.top_traits.length > 0) {
+				content += '<h2>Top Traits</h2>';
+				items = data.top_traits;
+			} else if (data.top_areas.length > 0) {
+				content += '<h2>Top Areas</h2>';
+				items = data.top_areas;
+			} else {
+				return '';
+			}
+			content += '<p>';
+			for(var i = 0; i < items.length; i++) {
+				content += items[i].name;
+				if(i < items.length - 1) {
+					content += ', ';
+				}
+			}
+			content += '</p>';
+			content += '</div>';
+		return content;
+	}
+
 	var request = function(url) {
 		var script = document.getElementsByTagName("script")[0];
 		var handler = document.createElement("script");
@@ -44,7 +74,7 @@
 		console.log(data);
 		var content = '';
 			content += buildSummary(data);
-			//content += buildSkills(data);
+			content += buildSkills(data);
 			//content += buildStats(data);
 			//content += buildBadges(data);
 		document.getElementById(global).innerHTML = content;
