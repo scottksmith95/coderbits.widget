@@ -62,6 +62,41 @@
 		return content;
 	}
 
+	var buildStats = function(data) {
+		var total = 0;
+		for(var i = 0; i < data.badges.length; i++) {
+			if(data.badges[i].earned) {
+				total++
+			}
+		}
+		var content = '';
+			content += '<div id="coderbits-stats">';
+			content += '<ul id="coderbits-stats-list">';
+			content += '<li>';
+			content += '<p>';
+			content += '<strong>' + addCommas(total) + '</strong>';
+			content += '<span> badges</span>';
+			content += '</p>';
+			content += '<p>';
+			content += '<strong>' + addCommas(data.follower_count) + '</strong>';
+			content += '<span> followers</span>';
+			content += '</p>';
+			content += '</li>';
+			content += '<li class="last">';
+			content += '<p>';
+			content += '<strong>' + addCommas(data.views) + '</strong>';
+			content += '<span> views</span>';
+			content += '</p>';
+			content += '<p>';
+			content += '<strong>' + addCommas(data.following_count) + '</strong>';
+			content += '<span> friends</span>';
+			content += '</p>';
+			content += '</li>';
+			content += '</ul>';
+			content += '</div>';
+		return content;
+	}
+
 	var request = function(url) {
 		var script = document.getElementsByTagName("script")[0];
 		var handler = document.createElement("script");
@@ -75,7 +110,7 @@
 		var content = '';
 			content += buildSummary(data);
 			content += buildSkills(data);
-			//content += buildStats(data);
+			content += buildStats(data);
 			//content += buildBadges(data);
 		document.getElementById(global).innerHTML = content;
 		delete window[global];
