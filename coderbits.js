@@ -25,4 +25,10 @@
 		}
 		return key;
 	};
+	var noConflict = function(begin, count) {
+		do {
+			var current = key(10);
+			var global = begin + current;
+		} while(window[global]);
+	}
 })(window, document);
