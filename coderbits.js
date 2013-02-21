@@ -116,7 +116,7 @@
 		content += '<a href="' + data.link + '/badges">view all ' + total + '</a>';
 		content += '</p>';
 		content += '</div>';
-		
+
 		return content;
 	};
 
@@ -129,7 +129,6 @@
 
 	var global = "coderbits";
 	window[global] = function(data) {
-		console.log(data);
 		var content = '';
 			content += buildSummary(data);
 			content += buildSkills(data);
