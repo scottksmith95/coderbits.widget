@@ -25,4 +25,8 @@
 		}
 		return key;
 	};
+	window["handleData"] = function(data) {
+		console.log(data);
+	}
+	request("https://coderbits.com/Donovan.json?callback=handleData");
 })(window, document);
