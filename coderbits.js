@@ -30,7 +30,7 @@
 			content += '</div>';
 			content += '</div>';
 		return content;
-	}
+	};
 
 	var request = function(url) {
 		var script = document.getElementsByTagName("script")[0];
@@ -49,7 +49,7 @@
 			//content += buildBadges(data);
 		document.getElementById(global).innerHTML = content;
 		delete window[global];
-	}
+	};
 
 	var username = document.getElementById(global).getAttribute("data-coderbits-username");
 	request("https://coderbits.com/" + username + ".json?callback=coderbits");
