@@ -1,4 +1,4 @@
-;(function(window, undefined) {
+;(function(window, document, undefined) {
 	"use strict";
 	var addCommas = function(nStr) {
 		nStr += '';
@@ -17,4 +17,4 @@
 			handler.src = url;
 		script.parentNode.insertBefore(handler, script);
 	};
-})(window);
+})(window, document);
