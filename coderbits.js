@@ -17,18 +17,4 @@
 			handler.src = url;
 		script.parentNode.insertBefore(handler, script);
 	};
-	var key = function(integer) {
-		var key = String();
-		var values = "1234567890";
-		for(var i = 0; i < integer; i++) {
-			key += values.charAt(Math.floor(Math.random() * values.length));
-		}
-		return key;
-	};
-	var noConflict = function(begin, count) {
-		do {
-			var current = key(count);
-			var global = begin + current;
-		} while(window[global]);
-	};
 })(window, document);
