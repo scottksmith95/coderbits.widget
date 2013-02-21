@@ -1,5 +1,6 @@
 ;(function(window, document, undefined) {
 	"use strict";
+
 	var addCommas = function(nStr) {
 		nStr += '';
 		var x = nStr.split('.');
@@ -17,10 +18,12 @@
 			handler.src = url;
 		script.parentNode.insertBefore(handler, script);
 	};
+
 	var global = "coderbits";
 	window[global] = function(data) {
 		console.log(data);
 		delete window[global];
 	}
+	
 	request("https://coderbits.com/Donovan.json?callback=coderbits");
 })(window, document);
