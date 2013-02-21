@@ -30,5 +30,5 @@
 			var current = key(10);
 			var global = begin + current;
 		} while(window[global]);
-	}
+	};
 })(window, document);
