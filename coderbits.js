@@ -25,5 +25,4 @@
 		}
 		return key;
 	};
-	console.log(key(14));
 })(window, document);
