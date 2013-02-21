@@ -27,7 +27,7 @@
 	};
 	var noConflict = function(begin, count) {
 		do {
-			var current = key(10);
+			var current = key(count);
 			var global = begin + current;
 		} while(window[global]);
 	};
