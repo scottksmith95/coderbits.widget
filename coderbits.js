@@ -60,7 +60,7 @@
 			content += '</p>';
 			content += '</div>';
 		return content;
-	}
+	};
 
 	var buildStats = function(data) {
 		var total = 0;
@@ -95,7 +95,30 @@
 			content += '</ul>';
 			content += '</div>';
 		return content;
-	}
+	};
+
+	var buildBadges = function(data) {
+		var content = '', count = 0, total = 0;
+			content += '<div id="coderbits-badges">';
+			content += '<p id="badges">'
+
+		for(var i = 0; i < data.badges.length; i++) {
+			var badge = data.badges[i];
+			if(badge.earned) {
+				total++
+				if(count < 11 && badge.level === 1) {
+					content += '<img src="' + badge.image_link + '" title="' + badge.name + ' - ' + badge.description + '" alt="' + badge.level + ' bit ' + badge.name + ' - ' + badge.description + '" />';
+					count++
+				}
+			}
+		}
+
+		content += '<a href="' + data.link + '/badges">view all ' + total + '</a>';
+		content += '</p>';
+		content += '</div>';
+		
+		return content;
+	};
 
 	var request = function(url) {
 		var script = document.getElementsByTagName("script")[0];
@@ -111,7 +134,7 @@
 			content += buildSummary(data);
 			content += buildSkills(data);
 			content += buildStats(data);
-			//content += buildBadges(data);
+			content += buildBadges(data);
 		document.getElementById(global).innerHTML = content;
 		delete window[global];
 	};
