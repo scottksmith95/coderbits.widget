@@ -35,16 +35,16 @@
 	var buildSkills = function(data) {
 		var content = '', items;
 			content += '<div id="coderbits-skills">';
-			if (data.top_skills.length > 0) {
+			if(data.top_skills.length > 0) {
 				content += '<h2>Top Skills</h2>';
 				items = data.top_skills;
-			} else if (data.top_interests.length > 0) {
+			} else if(data.top_interests.length > 0) {
 				content += '<h2>Top Interests</h2>';
 				items = data.top_interests;
-			} else if (data.top_traits.length > 0) {
+			} else if(data.top_traits.length > 0) {
 				content += '<h2>Top Traits</h2>';
 				items = data.top_traits;
-			} else if (data.top_areas.length > 0) {
+			} else if(data.top_areas.length > 0) {
 				content += '<h2>Top Areas</h2>';
 				items = data.top_areas;
 			} else {
