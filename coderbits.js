@@ -108,7 +108,7 @@
 			if(badge.earned) {
 				total++
 				if(count < 11 && badge.level === 1) {
-					content += '<img src="' + badge.image_link + '" title="' + badge.name + ' - ' + badge.description + '" alt="' + badge.level + ' bit ' + badge.name + ' - ' + badge.description + '" />';
+					content += '<img src="' + badge.image_link + '" title="' + badge.name + ' - ' + badge.description + '" alt="' + badge.level + ' bit ' + badge.name + ' - ' + badge.description + '">';
 					count++
 				}
 			}
