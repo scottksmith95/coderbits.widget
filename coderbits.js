@@ -17,7 +17,8 @@
 		var content = '';
 			content += '<div id="coderbits-summary">';
 			content += '<div id="coderbits-avatar">';
-			content += '<a href="' + data.link + '" target="_parent">';content += '<img alt="' + data.name + '" class="avatar" src="https://secure.gravatar.com/avatar/' + data.gravatar_hash + '?d=https%3A%2F%2Fcoderbits.com%2Fimages%2Fgravatar.png&r=PG&s=48">';
+			content += '<a href="' + data.link + '" target="_parent">';
+			content += '<img alt="' + data.name + '" class="avatar" src="https://secure.gravatar.com/avatar/' + data.gravatar_hash + '?d=https%3A%2F%2Fcoderbits.com%2Fimages%2Fgravatar.png&r=PG&s=48">';
 			content += '</a>';
 			content += '</div>';
 			content += '<div id="coderbits-overview">';
