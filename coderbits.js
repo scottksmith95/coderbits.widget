@@ -129,7 +129,7 @@
 	};
 
 	var global = "coderbits", element = document.getElementById(global);
-	if(global) {
+	if(element) {
 		window[global] = function(data) {
 			var content = '';
 				content += buildSummary(data);
