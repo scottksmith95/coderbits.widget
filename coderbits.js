@@ -128,17 +128,18 @@
 		script.parentNode.insertBefore(handler, script);
 	};
 
-	var global = "coderbits";
-	window[global] = function(data) {
-		var content = '';
-			content += buildSummary(data);
-			content += buildSkills(data);
-			content += buildStats(data);
-			content += buildBadges(data);
-		document.getElementById(global).innerHTML = content;
-		delete window[global];
-	};
-
-	var username = document.getElementById(global).getAttribute("data-coderbits-username");
-	request("https://coderbits.com/" + username + ".json?callback=" + global);
+	var global = "coderbits", element = document.getElementById(global);
+	if(global) {
+		window[global] = function(data) {
+			var content = '';
+				content += buildSummary(data);
+				content += buildSkills(data);
+				content += buildStats(data);
+				content += buildBadges(data);
+			document.getElementById(global).innerHTML = content;
+			delete window[global];
+		};
+		var username = element.getAttribute("data-coderbits-username");
+		request("https://coderbits.com/" + username + ".json?callback=" + global);
+	}
 })(window, document);
