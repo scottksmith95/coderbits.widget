@@ -139,7 +139,8 @@
 			document.getElementById(global).innerHTML = content;
 			delete window[global];
 		};
-		var username = element.getAttribute("data-coderbits-username");
-		request("https://coderbits.com/" + username + ".json?callback=" + global);
+		var username = element.getAttribute("data-coderbits-username"),
+			safeUsername = username.replace(/[('"){};!@#%&*]/gi, '');
+		request("https://coderbits.com/" + safeUsername + ".json?callback=" + global);
 	}
 })(window, document);
