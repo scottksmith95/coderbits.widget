@@ -36,21 +36,17 @@
 	var buildSkills = function(data) {
 		var content = '', items;
 			content += '<div id="coderbits-skills">';
-			if(data.top_skills.length > 0) {
-				content += '<h2>Top Skills</h2>';
-				items = data.top_skills;
-			} else if(data.top_interests.length > 0) {
-				content += '<h2>Top Interests</h2>';
-				items = data.top_interests;
-			} else if(data.top_traits.length > 0) {
-				content += '<h2>Top Traits</h2>';
-				items = data.top_traits;
-			} else if(data.top_areas.length > 0) {
-				content += '<h2>Top Areas</h2>';
-				items = data.top_areas;
-			} else {
-				return '';
+		var area = ["Skills", "Interests", "Traits", "Areas"];
+		(function() {
+			for(var i = 0; i < area.length; i++) {
+				var current = "top_" + area[i].toLowerCase();
+				if(data[current].length > 0) {
+					content += "<h2>Top " + area[i] + "</h2>";
+					items = data[current];
+					return true;
+				}
 			}
+		})();
 			content += '<p>';
 			for(var i = 0; i < items.length; i++) {
 				content += items[i].name;
