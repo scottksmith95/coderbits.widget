@@ -34,3 +34,7 @@ Can I host it myself?
 
 You sure can. Take the JavaScript and CSS file from this repository and host them
 on your server.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/scottksmith95/coderbits.widget/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
